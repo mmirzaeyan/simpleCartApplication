@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -31,6 +32,9 @@ public class SmsQueue implements Serializable {
 
     @Column(name = "IS_SUCCESS", nullable = false)
     private Boolean success;
+
+    @Column(name = "createddate", nullable = false)
+    private Date createdDate;
 
 
 }

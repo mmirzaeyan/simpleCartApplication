@@ -9,7 +9,7 @@ spring:
         hibernate:
             ddl-auto: none
     datasource:
-        url: jdbc:mysql://db_cart:3360/cart?useUnicode=true&allowPublicKeyRetriaval=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+        url: jdbc:mysql://localhost:3350/cart?allowPublicKeyRetrieval=true&useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8&useSSL=false
         username: root
         password: root
         hikari:

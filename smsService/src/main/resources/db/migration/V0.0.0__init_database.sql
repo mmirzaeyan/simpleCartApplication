@@ -4,5 +4,6 @@ create table sms_queue
     content      varchar(255) not null,
     mobile_phone varchar(255) not null,
     is_success   bit          not null,
+    createddate  datetime(6)  not null,
     primary key (id)
 ) engine = InnoDB;

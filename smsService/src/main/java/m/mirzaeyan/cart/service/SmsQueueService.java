@@ -38,6 +38,7 @@ public class SmsQueueService {
         SmsQueue smsQueue = SmsQueue.builder()
                 .mobilePhone(notificationMessage.getTarget())
                 .content(notificationMessage.getMsg())
+                .createdDate(new Date())
                 .success(false).build();
 
         return smsQueueRepository.save(smsQueue);
