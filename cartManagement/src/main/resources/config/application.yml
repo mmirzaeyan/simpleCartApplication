@@ -1,0 +1,36 @@
+spring:
+    application:
+        name: simpleCartApplication
+    jpa:
+        open-in-view: true
+        properties:
+            hibernate:
+              show_sql: true
+        hibernate:
+            ddl-auto: none
+    datasource:
+        url: jdbc:mysql://db_cart:3360/cart?useUnicode=true&allowPublicKeyRetriaval=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+        username: root
+        password: root
+        hikari:
+            minimum-idle: 1
+            maximum-pool-size: 50
+            pool-name: cartApplicationPool
+            maxLifetime:  2000000
+            idleTimeout:  30000
+            connectionTimeout:  30000
+
+kafka:
+    producer:
+        bootstrap: localhost:9092
+        topic: sms
+
+
+
+server:
+    port: 8087
+
+
+
+
+
